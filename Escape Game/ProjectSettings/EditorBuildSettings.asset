@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Escape_Test.unity
+    guid: ada9b538a8421aa45a6753023aff5f4e
   m_configObjects: {}
