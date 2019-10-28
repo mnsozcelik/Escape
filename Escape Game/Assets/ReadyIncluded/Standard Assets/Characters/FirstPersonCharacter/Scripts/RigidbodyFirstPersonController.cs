@@ -35,13 +35,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 				if (input.y < 0)
 				{
 					//backwards
-					CurrentTargetSpeed = BackwardSpeed;
+					CurrentTargetSpeed = BackwardSpeed * 0.3125f;
 				}
 				if (input.y > 0)
 				{
 					//forwards
 					//handled last as if strafing and moving forward at the same time forwards speed should take precedence
-					CurrentTargetSpeed = ForwardSpeed;
+					CurrentTargetSpeed = ForwardSpeed * 0.1875f;
 				}
 #if !MOBILE_INPUT
 	            if (Input.GetKey(RunKey))
@@ -171,7 +171,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     m_RigidBody.drag = 0f;
                     m_RigidBody.velocity = new Vector3(m_RigidBody.velocity.x, 0f, m_RigidBody.velocity.z);
-                    m_RigidBody.AddForce(new Vector3(0f, movementSettings.JumpForce, 0f), ForceMode.Impulse);
+                    m_RigidBody.AddForce(new Vector3(0f, movementSettings.JumpForce * 0.333f, 0f), ForceMode.Impulse);
                     m_Jumping = true;
                 }
 

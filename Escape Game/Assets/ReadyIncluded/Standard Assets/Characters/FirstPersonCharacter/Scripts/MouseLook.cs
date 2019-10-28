@@ -36,8 +36,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float yRot = LookAxis.x * XSensitivity;
             float xRot = LookAxis.y * YSensitivity;
 
-            m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
-            m_CameraTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
+            m_CharacterTargetRot *= Quaternion.Euler (0f, yRot * 0.2f, 0f);
+            m_CameraTargetRot *= Quaternion.Euler (-xRot * 0.2f, 0f, 0f);
 
             if(clampVerticalRotation)
                 m_CameraTargetRot = ClampRotationAroundXAxis (m_CameraTargetRot);
