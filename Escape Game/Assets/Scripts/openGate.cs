@@ -24,10 +24,16 @@ public class openGate : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        while(other.gameObject.name== "Character")
+        if(other.gameObject.name== "Character")
         {
+            float x = 0f;
+            for(int i=0;i<1000;i++)
+            {
+                new WaitForSeconds(0.002f);
+                x += 0.002f;
+                gatetrans.position = gatetrans.position + new Vector3(x, 0, 0);
+            }
             //Destroy(gate);
-            gatetrans.position = gatetrans.position + new Vector3(-2f,0,0);
             //anim.Play("gateOpen");
             Debug.Log("Plane üstünde..");
         }
