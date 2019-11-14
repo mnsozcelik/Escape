@@ -26,7 +26,7 @@ public class openGate : MonoBehaviour
     {
         if(other.gameObject.name== "Character")
         { 
-            gatetrans.position = gatetrans.position + new Vector3(x, 0, 0);
+            //gatetrans.position = gatetrans.position + new Vector3(x, 0, 0);
             //Destroy(gate);
             //anim.Play("gateOpen");
             Debug.Log("Plane üstünde..");
