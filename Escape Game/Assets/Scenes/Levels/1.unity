@@ -330,6 +330,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &276458961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2465581016146231204, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+    type: 3}
+  m_PrefabInstance: {fileID: 380269749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c432fad2d5d3974fbfdbf602ff2745d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &303343661
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +524,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4259317070197849125, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 276458961}
+    - target: {fileID: 4259317070197849125, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: gameplay
+      objectReference: {fileID: 0}
     - target: {fileID: 4887732585456639344, guid: 86198b61fd8d8ad4294d4964daa0ef96,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -563,6 +585,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 1df5c3f2afc93144eb30695db620c3e8,
         type: 3}
+    - target: {fileID: 3429487404316653948, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1698673698}
+    - target: {fileID: 3429487404316653948, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: gamepause
+      objectReference: {fileID: 0}
     - target: {fileID: 226210879474450876, guid: 86198b61fd8d8ad4294d4964daa0ef96,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -3205,6 +3237,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667832761}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1698673698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 374603575129890142, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+    type: 3}
+  m_PrefabInstance: {fileID: 380269749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c432fad2d5d3974fbfdbf602ff2745d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1711209339
 GameObject:
   m_ObjectHideFlags: 0
