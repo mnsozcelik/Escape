@@ -11,41 +11,19 @@ public class menuScript2 : MonoBehaviour
     public GameObject handle;
     public GameObject fixedJoystick;
     public GameObject panel;
-    public GameObject gameOverMenu;
-    public 
-
     bool isplay = false;
+
     void Start()
     {
-        //pauseButton = GameObject.Find("PauseButton");
-        //playButton = GameObject.Find("PlayButton");
-        //pauseMenu = GameObject.Find("PauseMenu");
         pauseButton.SetActive(true);
         playButton.SetActive(false);
         pauseMenu.SetActive(false);
-        gameOverMenu.SetActive(false);
+        
     }
 
     void Update()
     {
-        /*//timer timer = new timer();
-        //Debug.Log(timer.isOver);
-        if (timer.isOver == true)
-        {
-            isplay = false;
-            if (isplay == false)
-            {
-                playButton.SetActive(true);
-                pauseMenu.SetActive(true);
-                pauseButton.SetActive(false);
-                Time.timeScale = 0.0f;
-                handle.SetActive(false);
-                panel.SetActive(false);
-                fixedJoystick.SetActive(false);
-                gameOverMenu.SetActive(false);
-            }
-        }*/
-       
+        
     }
 
     public void gamepause()
@@ -60,7 +38,6 @@ public class menuScript2 : MonoBehaviour
             handle.SetActive(false);
             panel.SetActive(false);
             fixedJoystick.SetActive(false);
-            gameOverMenu.SetActive(false);
         }
     }
     public void gameplay()
@@ -75,7 +52,6 @@ public class menuScript2 : MonoBehaviour
             handle.SetActive(true);
             panel.SetActive(true);
             fixedJoystick.SetActive(true);
-            gameOverMenu.SetActive(false);
         }
     }
 

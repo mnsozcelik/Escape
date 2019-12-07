@@ -549,6 +549,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: replay
       objectReference: {fileID: 0}
+    - target: {fileID: 1380920022405190681, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3109313901175704490, guid: 86198b61fd8d8ad4294d4964daa0ef96,
         type: 3}
       propertyPath: m_Color.a
@@ -604,6 +609,16 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 2011166361}
+    - target: {fileID: 2465581016146231204, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 922611085}
+    - target: {fileID: 2465581016146231204, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 380269750}
     - target: {fileID: 4259317070197849125, guid: 86198b61fd8d8ad4294d4964daa0ef96,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1013,6 +1028,11 @@ PrefabInstance:
       propertyPath: gameOverMenu
       value: 
       objectReference: {fileID: 380269750}
+    - target: {fileID: 374603575129890142, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 922611085}
     - target: {fileID: 5853579374228341749, guid: 86198b61fd8d8ad4294d4964daa0ef96,
         type: 3}
       propertyPath: m_Name
@@ -1105,7 +1125,7 @@ MonoBehaviour:
   fixedJoystick: {fileID: 570099653}
   panel: {fileID: 2011166361}
   gameOverMenu: {fileID: 380269750}
-  isplay: 0
+  timer: {fileID: 922611085}
 --- !u!1 &407937654 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4796421231377638111, guid: 86198b61fd8d8ad4294d4964daa0ef96,
@@ -2066,6 +2086,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903024641}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &922611085 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2339446980297915955, guid: 86198b61fd8d8ad4294d4964daa0ef96,
+    type: 3}
+  m_PrefabInstance: {fileID: 380269749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae19f0ee53904c14ca6ad85e4ec7a86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &958803509
 GameObject:
   m_ObjectHideFlags: 0

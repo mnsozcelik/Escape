@@ -11,6 +11,7 @@ public class timer : MonoBehaviour
     public Image TimerImage;
     public bool isOver=false;
     public Color orange;
+    public float percentIdealTiming;
     void Start()
     {
         startTime = Time.time;
@@ -28,7 +29,7 @@ public class timer : MonoBehaviour
         string minutes = ((int)t / 60).ToString();
         string seconds = (t % 60).ToString("f0");
         timerText.text = minutes + ":" + seconds;
-        float percentIdealTiming = (Time.time - startTime) / idealTime;
+        percentIdealTiming = (Time.time - startTime) / idealTime;
         //Debug.Log(percentIdealTiming);
         
         if (percentIdealTiming > 0.25)
@@ -43,9 +44,10 @@ public class timer : MonoBehaviour
         {
             TimerImage.color = UnityEngine.Color.red;
         }
-        if(percentIdealTiming >= 1)
+        if(timerText.text=="0:0")
         {
             isOver = true;
+            Time.timeScale = 0.0f;
         }
     }
 }
