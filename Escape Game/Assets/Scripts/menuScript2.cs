@@ -8,51 +8,28 @@ public class menuScript2 : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject pauseButton;
     public GameObject playButton;
-    public GameObject handle;
-    public GameObject fixedJoystick;
-    public GameObject panel;
-    bool isplay = false;
-
+    public GameObject Controller;
+    public Animator pAnim;
+    
     void Start()
-    {
+    { 
         pauseButton.SetActive(true);
-        playButton.SetActive(false);
-        pauseMenu.SetActive(false);
-        
-    }
-
-    void Update()
-    {
-        
     }
 
     public void gamepause()
     {
-        isplay = false;
-        if (isplay == false)
-        {
-            playButton.SetActive(true);
-            pauseMenu.SetActive(true);
-            pauseButton.SetActive(false);
-            Time.timeScale = 0.0f;
-            handle.SetActive(false);
-            panel.SetActive(false);
-            fixedJoystick.SetActive(false);
-        }
+        Controller.SetActive(false);
+        pAnim.Play("pIn");
+        playButton.SetActive(true);
+        Time.timeScale = 0.0f;
     }
+
     public void gameplay()
     {
-        isplay = true;
-        if (isplay == true)
-        {
-            playButton.SetActive(false);
-            pauseMenu.SetActive(false);
-            pauseButton.SetActive(true);
-            Time.timeScale = 1.0f;
-            handle.SetActive(true);
-            panel.SetActive(true);
-            fixedJoystick.SetActive(true);
-        }
+        Controller.SetActive(true);
+        pAnim.Play("pOut");
+        playButton.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     public void replay()
