@@ -38,6 +38,11 @@ public class menuScript2 : MonoBehaviour
         string activescene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(activescene);
     }
+    public void levelsScene()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("levelsScene");
+    }
     public void mainMenu()
     {
         Time.timeScale = 1.0f;

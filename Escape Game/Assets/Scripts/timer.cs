@@ -15,7 +15,7 @@ public class timer : MonoBehaviour
     void Start()
     {
         startTime = Time.time;
-        idealTime = 10.0f;
+        idealTime = 64.0f;
         TimerImage = Timer.GetComponent<Image>();
         TimerImage.color = UnityEngine.Color.green;
         orange=new Color(1f, 0.6f, 0f);
