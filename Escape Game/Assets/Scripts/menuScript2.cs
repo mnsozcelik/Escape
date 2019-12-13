@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class menuScript2 : MonoBehaviour 
 {
@@ -9,11 +10,22 @@ public class menuScript2 : MonoBehaviour
     public GameObject pauseButton;
     public GameObject playButton;
     public GameObject Controller;
+    public Text timerText;
     public Animator pAnim;
+    public Animator gAnim;
+    private bool isOver=false;
     
     void Start()
     { 
         pauseButton.SetActive(true);
+    }
+    void Update()
+    {
+        if (timerText.text == "0:0" && isOver==false)
+        {
+            isOver = true;
+            gameOver();
+        }
     }
 
     public void gamepause()
@@ -47,5 +59,13 @@ public class menuScript2 : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("menu");
+    }
+    public void gameOver()
+    {
+        Controller.SetActive(false);
+        gAnim.Play("gIn");
+        playButton.SetActive(false);
+        pauseButton.SetActive(false);
+        Time.timeScale = 0.0f;
     }
 }
