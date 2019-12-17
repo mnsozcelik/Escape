@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class timer : MonoBehaviour
 {
     public Text timerText;
@@ -12,10 +13,21 @@ public class timer : MonoBehaviour
     public bool isOver=false;
     public Color orange;
     public float percentIdealTiming;
+    public string activescene;
     void Start()
     {
+        activescene = SceneManager.GetActiveScene().name.ToString();
+        if (activescene == "1")
+        {
+            idealTime = 75.0f;
+        }else if (activescene == "2")
+        {
+            idealTime = 45.0f;
+        }else if (activescene == "3")
+        {
+            idealTime = 85.0f;
+        }
         startTime = Time.time;
-        idealTime = 10.0f;
         TimerImage = Timer.GetComponent<Image>();
         TimerImage.color = UnityEngine.Color.green;
         orange=new Color(1f, 0.6f, 0f);

@@ -13,7 +13,8 @@ public class menuScript2 : MonoBehaviour
     public Text timerText;
     public Animator pAnim;
     public Animator gAnim;
-    private bool isOver=false;
+    private bool isOver = false;
+    public Text gameOverText;
     
     void Start()
     { 
@@ -21,7 +22,7 @@ public class menuScript2 : MonoBehaviour
     }
     void Update()
     {
-        if (timerText.text == "0:0" && isOver==false)
+        if ((timerText.text == "0:0" || gameOverText.text==".") && isOver==false)
         {
             isOver = true;
             gameOver();
