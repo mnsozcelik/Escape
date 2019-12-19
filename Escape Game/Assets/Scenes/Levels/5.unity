@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3198d04c1ecd1b8408bf94ecd65c44cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fAnim: {fileID: 0}
+  fAnim: {fileID: 1732319602}
   finish: {fileID: 995684533}
 --- !u!108 &995684535
 Light:
@@ -2376,6 +2376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cecce8d3f549de045bea5fd79de9e7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1732319602 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3407571413712576573, guid: 3e70d49265b40804da459e3fd0b4398f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1732319597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1783709714
 GameObject:
   m_ObjectHideFlags: 0

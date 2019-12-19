@@ -30,6 +30,70 @@ public class timer : MonoBehaviour
         {
             idealTime = 50.0f;
         }
+        else if (activescene == "5")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "6")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "7")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "8")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "9")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "10")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "11")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "12")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "13")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "14")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "15")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "16")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "17")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "18")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "19")
+        {
+            idealTime = 50.0f;
+        }
+        else if (activescene == "20")
+        {
+            idealTime = 50.0f;
+        }
         startTime = Time.time;
         TimerImage = Timer.GetComponent<Image>();
         TimerImage.color = UnityEngine.Color.green;
