@@ -17,11 +17,14 @@ public class menuScript2 : MonoBehaviour
     public Text gameOverText;
     
     void Start()
-    { 
+    {
+        gameOverText.text = "";
         pauseButton.SetActive(true);
     }
     void Update()
     {
+        Debug.Log(timerText.text);
+        Debug.Log(gameOverText.text);
         if ((timerText.text == "0:0" || gameOverText.text==".") && isOver==false)
         {
             isOver = true;

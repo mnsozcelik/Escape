@@ -26,6 +26,9 @@ public class timer : MonoBehaviour
         }else if (activescene == "3")
         {
             idealTime = 85.0f;
+        }else if (activescene == "4")
+        {
+            idealTime = 50.0f;
         }
         startTime = Time.time;
         TimerImage = Timer.GetComponent<Image>();
